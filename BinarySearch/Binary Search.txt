@@ -1,0 +1,58 @@
+#include<iostream>
+#include<cstdlib>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	int arr[100];
+	int i, first, last, middle, s, num;
+
+	cout << "Enter your array number : ";
+	cin >> num;
+
+	cout << "Enter " << num << " element : " << endl;
+
+	for (i = 0; i<num; i++)
+	{
+		cin >> arr[i];
+	}
+
+	cout << "Enter value to find : ";
+	cin >> s;
+
+	first = 0;
+	last = num - 1;
+	middle = (first + last) / 2;
+
+	while (first <= last)
+	{
+		if (arr[middle]<s)
+		{
+			first = middle + 1;
+			middle = (first + last) / 2;
+			cout << s << " is found " << endl;
+			break;
+
+		}
+		else if (arr[middle] == s)
+		{
+			cout << s << " is found and index number or location is : " << middle + 1 << endl;
+			break;
+		}
+		else
+		{
+			last = middle - 1;
+
+			middle = (first + last) / 2;
+		}
+	}
+	if (first>last)
+	{
+		cout << "No data found." << s << " is not in this list" << endl;
+	}
+
+	return 0;
+}
+

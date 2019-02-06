@@ -1,0 +1,31 @@
+﻿Build started 27/02/2018 10:45:12 AM.
+     1>Project "F:\AIUB Program\4th Semester\Mid Term\Data Structure\LinkList0\LinkList0\LinkList0.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Source.cpp
+         Source.cpp
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(75): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(77): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(79): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(81): warning C4305: 'argument' : truncation from 'double' to 'float'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(84): error C2780: '_Ty *std::end(_Ty (&)[_Size])' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1220) : see declaration of 'std::end'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(84): error C2780: 'unknown-type std::end(const _Container &)' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1206) : see declaration of 'std::end'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(84): error C2780: 'unknown-type std::end(_Container &)' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1200) : see declaration of 'std::end'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(84): error C2780: 'const _Elem *std::end(std::initializer_list<_Elem>) throw()' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\initializer_list(67) : see declaration of 'std::end'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(85): error C3861: 'insertBack': identifier not found
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(87): error C2780: '_Ty *std::end(_Ty (&)[_Size])' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1220) : see declaration of 'std::end'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(87): error C2780: 'unknown-type std::end(const _Container &)' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1206) : see declaration of 'std::end'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(87): error C2780: 'unknown-type std::end(_Container &)' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\xutility(1200) : see declaration of 'std::end'
+     1>f:\aiub program\4th semester\mid term\data structure\linklist0\linklist0\source.cpp(87): error C2780: 'const _Elem *std::end(std::initializer_list<_Elem>) throw()' : expects 1 arguments - 0 provided
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\initializer_list(67) : see declaration of 'std::end'
+     1>Done Building Project "F:\AIUB Program\4th Semester\Mid Term\Data Structure\LinkList0\LinkList0\LinkList0.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.78

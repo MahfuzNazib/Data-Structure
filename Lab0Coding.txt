@@ -1,0 +1,177 @@
+/*#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    int Large;
+    int arr[10];
+
+    cout<<"Enter 10 Number : ";
+    for(i=0;i<10;++i)
+    {
+        cin>>arr[i];
+    }
+    Large=arr[0];
+
+    for(i=0;i<10;++i)
+    {
+        if(arr[i]>Large)
+        {
+            Large=arr[i];
+
+        }
+
+    }
+cout<<"Large Number is : "<<Large<<endl;
+    return 0;
+}
+*/
+/*
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int x;
+    int arr[5]={1,2,3,4,5};
+    int i;
+
+    cout<<"Enter your Finding Number : ";
+    cin>>x;
+
+    for(i=0;i<=5;i++)
+    {
+        if(arr[i]==x)
+        {
+            i=x;
+            cout<<"Your Number is Find"<<endl;
+            break;
+        }
+        else
+        {
+            cout<<"Do not find Your Number"<<endl;
+        }
+    }
+
+    return 0;
+}
+
+
+*/
+/*
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int arr[10];
+    int i;
+    int Sum_Even=0;
+    int Sum_Odd=0;
+
+    cout<<"Enter 10 Number : ";
+    for(i=0;i<10;i++)
+    {
+        cin>>arr[i];
+    }
+    for(i=0;i<10;i++)
+    {
+        if(arr[i]%2==0)
+        {
+            arr[i];
+            Sum_Even=Sum_Even+arr[i];
+
+        }
+        else
+        {
+            arr[i];
+            Sum_Odd=Sum_Odd+arr[i];
+        }
+    }
+
+
+    cout<<"Even Number Sum is : "<<Sum_Even<<endl;
+
+
+    cout<<"Odd Number Sum is : "<<Sum_Odd<<endl;
+
+
+
+
+
+    return 0;
+}
+*/
+/*
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int n;
+    int i;
+    int arr[5]={1,2,3,4,5};
+    int c=1;
+
+    cout<<"Enter the Number that you wanna find : ";
+    cin>>n;
+
+    for(i=0;i<5;i++)
+    {
+        if(arr[i]==n)
+            c=0;
+    }
+    if(c==1)
+    {
+        cout<<"Number Not found !!"<<endl;
+    }
+    else
+    {
+        cout<<"Number found @@"<<endl;
+    }
+
+    return 0;
+}
+*/
+
+#include<iostream>
+
+using namespace std;
+
+int main()
+{
+    int i;
+    int arr[5];
+    int Value;
+    int Position;
+
+    cout<<"Enter Your Numbers : ";
+    for(i=0;i<5;i++)
+    {
+        cin>>arr[i];
+    }
+
+    cout<<"Enter Inserting Value : ";
+    cin>>Value;
+
+    cout<<"Enter inserted Position : ";
+    cin>>Position;
+
+    for(i=4;i<=Position;i--)
+    {
+        arr[i+1]=arr[i];
+    }
+    arr[Position]=Value;
+
+    for(i=0;i<=5;i++)
+    {
+        cout<<arr[i]<<endl;
+    }
+
+    return 0;
+}

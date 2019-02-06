@@ -1,0 +1,154 @@
+#include<iostream>
+#include<cstdlib>
+#include<string>
+
+using namespace std;
+
+struct node
+{
+	int data;
+	node *next;
+};
+
+node *nptr, *tptr, *list;
+
+//CREATE NEW NODE
+node *CreateNewNode(int item)
+{
+	node *ptr;
+	ptr = new(node);
+	ptr->data = item;
+	ptr->next = NULL;
+
+	return ptr;
+}
+
+//CREATE LINK
+void CreateLink(node *ptr)
+{
+	if (list == NULL)
+	{
+		list = ptr;
+		tptr = ptr;
+	}
+	else
+	{
+		tptr->next = ptr;
+		tptr = ptr;
+	}
+}
+
+//PRINT LIST
+
+void PrintList()
+{
+	tptr = list;
+	cout << "Your Linked List is : " << endl;;
+	while (tptr != NULL)
+	{
+		
+		cout << tptr->data << " " ;
+		tptr = tptr->next;
+	}
+	cout << endl;
+}
+
+//INSERT FIRST
+
+void InsertFirst(node *ptr)
+{
+	cout << "After Insert First , ";
+	ptr->next = list;
+	list = ptr;
+}
+
+//INSERT LAST
+void InsertLast(int value, node *ptr)
+{
+	tptr = list;
+	cout << "After Insert Last , ";
+	while (tptr->data != value)
+	{
+		tptr = tptr->next;
+	}
+	ptr->next = tptr -> next;
+	tptr->next = ptr;
+
+}
+
+//INSERT MIDDLE
+void InsertMiddle(int position, node *ptr)
+{
+
+	tptr = list;
+	int i;
+	cout << "After insert at " << position << ",";
+	for (i = 0; i < position; i++)
+	{
+		tptr = tptr->next;
+	}
+	ptr->next = tptr->next;
+	tptr->next = ptr;
+}
+
+//DELETE FIRST
+void DeleteFirst()
+{
+	cout << "After Delete From First ,";
+	node *ptr;
+	ptr = list;
+	tptr = list->next;
+	//tptr = ptr->next;
+	delete ptr;
+	list = tptr;
+
+}
+
+//DELETE LAST
+
+void deleteFromLast()
+{
+	node *ptr;
+	tptr = list;
+
+	while (tptr->next->next != NULL)
+		tptr = tptr->next;
+	cout << "\ndeleting :" << tptr->next->data;
+	cout << endl;
+	ptr = tptr->next;
+	tptr->next = NULL;
+	delete ptr;
+}
+//MAIN FUNCTION
+
+int main()
+{
+	list = NULL;
+	int i;
+	for (i = 0; i <= 5; i++)
+	{
+		nptr = CreateNewNode(i);
+		CreateLink(nptr);
+	}
+
+	PrintList();
+	//ANOTHER NODE INSERT
+	nptr = CreateNewNode(100);
+	InsertFirst(nptr);
+	PrintList();
+	//ANOTHER NODE
+	nptr = CreateNewNode(99);
+	InsertLast(5, nptr);
+	PrintList();
+	//ANOTHER NODE
+	nptr = CreateNewNode(160);
+	InsertMiddle(3, nptr);
+	PrintList();
+	//DELETE FROM FIRST
+	DeleteFirst();
+	PrintList();
+	//DELETE FROM LAST
+	deleteFromLast();
+	PrintList();
+	return 0;
+}

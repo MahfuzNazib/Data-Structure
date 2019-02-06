@@ -1,0 +1,158 @@
+#include<iostream>
+#include<cstdlib>
+#include<string>
+
+using namespace std;
+
+int main()
+{
+	int m1, m2, m3, m4;
+
+	cout << "Enter 1st Mark : ";
+	cin >> m1;
+	cout << "Enter 2nd Mark : ";
+	cin >> m2;
+	cout << "Enter 3rd Mark : ";
+	cin >> m3;
+	cout << "Enter 4th Mark : ";
+	cin >> m4;
+
+	if (m1 < m2 && m1 < m3 && m1 < m4)
+	{
+		cout << " Best 3 Numbers are : " << m2 << m3 << m4 << endl;
+		cout << "Sum is : " << m2 + m3 + m4 << endl;
+		cout << "Avarage is : " << (m2 + m3 + m4) / 3 << endl;
+	}
+	else if (m2 < m1 && m2 < m3 && m2 < m4)
+	{
+		cout << " Best 3 Numbers are : " << m1 << " "<< m3 <<" "<< m4 << endl;
+		cout << "Sum is : " << m1 + m3 + m4 << endl;
+		cout << "Avarage is : " << (m1 + m3 + m4) / 3 << endl;
+	}
+	else if (m3 < m1&&m3 < m2&&m3 < m4)
+	{
+		cout << " Best 3 Numbers are : " << m2 << " " << m1 << " " << m4 << endl;
+		cout << "Sum is : " << m2 + m1 + m4 << endl;
+		cout << "Avarage is : " << (m2 + m1 + m4) / 3 << endl;
+	}
+	else
+	{
+		cout << " Best 3 Numbers are : " << m2 << " " << m3 << " " << m1 << endl;
+		cout << "Sum is : " << m2 + m3 + m1 << endl;
+		cout << "Avarage is : " << (m2 + m3 + m1) / 3 << endl;
+	}
+
+	return 0;
+}
+--------------------
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int Num;
+    int S;
+    string Name;
+    int Salary;
+    int C;
+    cout<<"Enter Data Number : ";
+    cin>>C;
+
+    for(int i=0;i<C;i++)
+    {
+    cout<<"Enter Num : ";
+    cin>>Num;
+    cout<<"Enter Name : ";
+    cin>>Name;
+    cout<<"Enter Salary : ";
+    cin>>Salary;
+    cout<<"#################"<<endl;
+
+    }
+    /*
+    cout<<"Enter Num : ";
+    cin>>Num;
+    cout<<"Enter Name : ";
+    cin>>Name;
+    cout<<"Enter Salary : ";
+    cin>>Salary;
+*/
+    cout<<"Enter Search Data : ";
+    cin>>S;
+    for(int i=0;i<C;i++)
+    {
+        if(S==Num)
+    {
+        cout<<"Name : "<<Name<<endl;
+        cout<<"Salary : "<<Salary<<endl;
+
+        break;
+    }
+    else
+    {
+        cout<<"No Data Has been Found"<<endl;
+    }
+    }
+
+
+    return 0;
+}
+--------
+#include<iostream>
+#include<cstdlib>
+#include<string>
+
+using namespace std;
+int main()
+{
+	string ID;
+	string Name;
+	string Job;
+	int Salary;
+	int Num;
+	string S;
+
+	cout << "Enter Number : ";
+	cin >> Num;
+
+	for (int i = 0; i < Num; i++)
+	{
+		cout << "Enter ID number : ";
+		cin >> ID;
+
+		cout << "Enter Name : ";
+		cin >> Name;
+		
+		cout << "Enter Job Name : ";
+		cin >> Job;
+
+		cout << "Enter Salary : ";
+		cin >> Salary;
+
+		cout << "####################################" << endl;
+
+	}
+
+	cout << "Enter ID Number to Search : ";
+	cin >> S;
+
+	for (int i = 0; i < Num; i++)
+	{
+		if (S == ID)
+		{
+			cout << "ID Number : " << ID << endl;
+			cout << "Name : " << Name << endl;
+			cout << "Job : " << Job << endl;
+			cout << "Salary : " << Salary << endl;
+			cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~" << endl;
+			break;
+		}
+		else
+		{
+			cout << "Not Data Found @@" << endl;
+			break;
+		}
+	}
+	return 0;
+}
